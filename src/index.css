@@ -1,0 +1,164 @@
+* {
+  font-family: sans-serif;
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+a, a:link, a:visited  {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover  {
+  text-decoration: none;
+}
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+input, textarea, button, select {
+	font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+  transition: ease 0.3s;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 5px;
+}
+
+.input-text {
+  border-radius: 5px;
+  border: 2px solid #646cff;
+  padding: 0.25em 0.5em;
+}
+
+.add-task-container {
+  display: flex;
+  gap: 10px;
+}
+
+.button-one {
+  border-radius: 5px;
+  border: 2px solid #646cff;
+  padding: 0.25em 0.5em;
+}
+
+.button-one:active {
+  background-color: #646cff;
+  color: #FFF;
+}
+
+.card-list {
+  flex-shrink: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  width: 60%;
+}
+
+.item-card {
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px 15px;
+  color: #FFF;
+  background-color: #646cff;
+  position: relative;
+  display: flex;
+  gap: 10px;
+}
+
+.item-card-text {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.item-card-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.button-two:hover {
+  color: #79c9f7;
+}
+
+@media (max-width: 450px) { 
+  .add-task-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1000px) { 
+  .card-list {
+    width: 100%;
+  }
+}
