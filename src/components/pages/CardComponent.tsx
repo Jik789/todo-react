@@ -6,7 +6,7 @@ function CardComponent(props: CardProps) {
 
   return (
     <div className="item-card">
-      <p className="item-card-text">{item.id}</p>
+      <p className="item-card-text">{item.text}</p>
       <div className="item-card-buttons">
         <button className="button-two">Редактировать</button>
         <button className="button-two">Удалить</button>

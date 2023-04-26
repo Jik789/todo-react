@@ -122,7 +122,7 @@ button::-moz-focus-inner {
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
-  width: 60%;
+  width: 65%;
 }
 
 .item-card {
@@ -152,13 +152,21 @@ button::-moz-focus-inner {
 }
 
 @media (max-width: 450px) { 
+  * {
+    font-size: 12px;
+  }
   .add-task-container {
     flex-direction: column;
+    gap: 5px;
+  }
+  .item-card {
+    padding: 3px 6px;
   }
 }
 
 @media (max-width: 1000px) { 
   .card-list {
     width: 100%;
+    gap: 5px;
   }
 }

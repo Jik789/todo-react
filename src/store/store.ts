@@ -1,16 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
-import inputNameSliceReducer from './features/inputNameSlice';
-import inputRepoSliceReducer from './features/inputRepoSlice';
-import { api } from '../components/DATA/api';
+import addCardToList from './features/addCardSlice';
 
 export const store = configureStore({
   reducer: {
-    inputName: inputNameSliceReducer,
-    inputRepo: inputRepoSliceReducer,
-    [api.reducerPath]: api.reducer,
+    addCard: addCardToList,
   },
-  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(api.middleware),
 });
 
 export type RootState = ReturnType<typeof store.getState>;

@@ -4,6 +4,7 @@ type CardProps = {
 
 type Card = {
   id: number;
+  text: string;
 };
 
 export type { CardProps, Card };
