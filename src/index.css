@@ -141,8 +141,17 @@ button::-moz-focus-inner {
   overflow: hidden;
 }
 
+.item-card-input {
+  flex-grow: 1;
+  overflow: hidden;
+  background-color: #79c9f7;
+  border-radius: 5px;
+  padding: 0 5px;
+}
+
 .item-card-buttons {
   display: flex;
+  align-items: flex-end;
   flex-direction: column;
   gap: 10px;
 }

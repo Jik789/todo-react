@@ -17,17 +17,17 @@ export const сardSlice = createSlice({
   initialState,
   reducers: {
     removeCard: (state, action: PayloadAction<number>) => {
-      console.log(action.payload);
       state.items = state.items.filter((item) => item.id !== action.payload);
-      // state = state.filter((item) => item.id !== action.payload);
     },
     addCard: (state, action: PayloadAction<Card>) => {
-      console.log(state.items);
       state.items.push(action.payload);
+    },
+    editTextCard: (state, action: PayloadAction<Card>) => {
+      state.items[action.payload.id - 1].text = action.payload.text;
     },
   },
 });
 
-export const { addCard, removeCard } = сardSlice.actions;
+export const { addCard, removeCard, editTextCard } = сardSlice.actions;
 
 export default сardSlice.reducer;
