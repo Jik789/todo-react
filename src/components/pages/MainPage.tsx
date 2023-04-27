@@ -5,7 +5,7 @@ import AddNewTaskComponent from './AddNewTaskComponent';
 import CardComponent from './CardComponent';
 
 function MainPage() {
-  const cardList = useAppSelector((state) => state.addCard);
+  const cardList = useAppSelector((state) => state.cardList.items);
 
   return (
     <div className="main-container">

@@ -1,10 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
-import addCardToList from './features/addCardSlice';
+import сardSlice from './features/сardSlice';
 
 export const store = configureStore({
   reducer: {
-    addCard: addCardToList,
+    cardList: сardSlice,
   },
 });
 

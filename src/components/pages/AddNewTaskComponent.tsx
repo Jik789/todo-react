@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { addCard } from '../../store/features/addCardSlice';
+import { addCard } from '../../store/features/сardSlice';
 import { useAppDispatch } from '../../store/store';
 
 function AddNewTaskComponent() {
